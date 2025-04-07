@@ -38,9 +38,9 @@ const services = [
   },
   {
     icon: <BarChart3 className="h-10 w-10" />,
-    title: "Analytics & Business Intelligence",
+    title: "Web3 & Blockchain",
     description:
-      "Data-driven insights and visualization tools that help you make informed business decisions.",
+      "Innovative decentralized applications, smart contracts, and blockchain solutions for next-generation digital experiences.",
   },
 ];
 
@@ -51,6 +51,8 @@ const technologies = [
   { name: "AWS", icon: <Cloud className="h-6 w-6" /> },
   { name: "Docker", icon: <RefreshCw className="h-6 w-6" /> },
   { name: "MongoDB", icon: <Database className="h-6 w-6" /> },
+  { name: "Ethereum", icon: <ShieldCheck className="h-6 w-6" /> },
+  { name: "Solidity", icon: <Code className="h-6 w-6" /> },
   { name: "Angular", icon: <Code className="h-6 w-6" /> },
   { name: "Vue.js", icon: <Code className="h-6 w-6" /> },
 ];

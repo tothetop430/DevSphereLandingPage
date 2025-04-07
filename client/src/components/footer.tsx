@@ -63,7 +63,7 @@ export function Footer() {
                 <a href="#services" className="text-gray-400 hover:text-primary transition-colors">UI/UX Design</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Database Architecture</a>
+                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Web3 & Blockchain</a>
               </li>
             </ul>
           </div>

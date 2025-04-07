@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { fadeIn, slideUp } from "@/lib/animations";
-import { Code, Monitor, Server } from "lucide-react";
+import { Code, Monitor, Server, ShieldCheck } from "lucide-react";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -53,7 +53,7 @@ export function HeroSection() {
               </Button>
             </div>
 
-            <div className="mt-10 grid grid-cols-3 gap-4">
+            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="flex items-center text-primary">
                 <Code className="h-5 w-5 mr-2" />
                 <span className="text-sm font-medium">Web Development</span>
@@ -65,6 +65,10 @@ export function HeroSection() {
               <div className="flex items-center text-primary">
                 <Server className="h-5 w-5 mr-2" />
                 <span className="text-sm font-medium">Cloud Solutions</span>
+              </div>
+              <div className="flex items-center text-primary">
+                <ShieldCheck className="h-5 w-5 mr-2" />
+                <span className="text-sm font-medium">Web3 & Blockchain</span>
               </div>
             </div>
           </motion.div>
