@@ -36,30 +36,44 @@ export function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <span className="text-primary font-bold text-xl cursor-pointer">ProductName</span>
+              <span className="text-primary font-bold text-xl cursor-pointer">DevSphere<span className="text-gray-700 font-normal">.info</span></span>
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="flex items-center space-x-4">
               <Button
-                onClick={() => scrollToSection("features")}
+                onClick={() => scrollToSection("services")}
                 variant="ghost"
                 className="text-gray-700 hover:text-primary hover:bg-gray-100"
               >
-                Features
+                Services
+              </Button>
+              <Button
+                onClick={() => scrollToSection("portfolio")}
+                variant="ghost"
+                className="text-gray-700 hover:text-primary hover:bg-gray-100"
+              >
+                Portfolio
               </Button>
               <Button
                 onClick={() => scrollToSection("about")}
                 variant="ghost"
                 className="text-gray-700 hover:text-primary hover:bg-gray-100"
               >
-                About
+                About Us
               </Button>
               <Button
-                onClick={() => scrollToSection("waitlist")}
+                onClick={() => scrollToSection("testimonials")}
+                variant="ghost"
+                className="text-gray-700 hover:text-primary hover:bg-gray-100"
+              >
+                Testimonials
+              </Button>
+              <Button
+                onClick={() => scrollToSection("contact")}
                 className="ml-4 text-white bg-primary hover:bg-primary/90"
               >
-                Join Waitlist
+                Contact Us
               </Button>
             </div>
           </div>
@@ -82,24 +96,38 @@ export function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-md">
             <Button
-              onClick={() => scrollToSection("features")}
+              onClick={() => scrollToSection("services")}
               variant="ghost"
               className="w-full justify-start text-gray-700 hover:text-primary hover:bg-gray-100"
             >
-              Features
+              Services
+            </Button>
+            <Button
+              onClick={() => scrollToSection("portfolio")}
+              variant="ghost"
+              className="w-full justify-start text-gray-700 hover:text-primary hover:bg-gray-100"
+            >
+              Portfolio
             </Button>
             <Button
               onClick={() => scrollToSection("about")}
               variant="ghost"
               className="w-full justify-start text-gray-700 hover:text-primary hover:bg-gray-100"
             >
-              About
+              About Us
             </Button>
             <Button
-              onClick={() => scrollToSection("waitlist")}
+              onClick={() => scrollToSection("testimonials")}
+              variant="ghost"
+              className="w-full justify-start text-gray-700 hover:text-primary hover:bg-gray-100"
+            >
+              Testimonials
+            </Button>
+            <Button
+              onClick={() => scrollToSection("contact")}
               className="w-full text-white bg-primary hover:bg-primary/90"
             >
-              Join Waitlist
+              Contact Us
             </Button>
           </div>
         </div>

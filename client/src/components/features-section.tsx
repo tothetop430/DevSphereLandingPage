@@ -1,62 +1,76 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Zap, ChartBarStacked, Lock, Clock, MessageSquare } from "lucide-react";
+import { 
+  Globe, Smartphone, Cloud, PenTool, Database, BarChart3, 
+  ShieldCheck, Code, Laptop, Settings, Terminal, RefreshCw 
+} from "lucide-react";
 import { fadeIn } from "@/lib/animations";
 
-const features = [
+const services = [
   {
-    icon: <CheckCircle className="h-10 w-10" />,
-    title: "Seamless Integration",
+    icon: <Globe className="h-10 w-10" />,
+    title: "Web Development",
     description:
-      "Connect with your favorite tools and services for a smooth workflow.",
+      "Custom responsive websites and progressive web applications built with modern frameworks and technologies.",
   },
   {
-    icon: <Zap className="h-10 w-10" />,
-    title: "Real-time Collaboration",
+    icon: <Smartphone className="h-10 w-10" />,
+    title: "Mobile App Development",
     description:
-      "Work together with your team in real-time, no matter where they are.",
+      "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences.",
   },
   {
-    icon: <ChartBarStacked className="h-10 w-10" />,
-    title: "Advanced Analytics",
+    icon: <Cloud className="h-10 w-10" />,
+    title: "Cloud Solutions",
     description:
-      "Gain valuable insights with our powerful analytics and reporting tools.",
+      "Scalable cloud infrastructure, deployment, and management services using AWS, Azure, or Google Cloud.",
   },
   {
-    icon: <Lock className="h-10 w-10" />,
-    title: "Enterprise Security",
+    icon: <PenTool className="h-10 w-10" />,
+    title: "UI/UX Design",
     description:
-      "Your data is protected with bank-level security and encryption.",
+      "User-centered design that combines aesthetics with functionality to create engaging digital experiences.",
   },
   {
-    icon: <Clock className="h-10 w-10" />,
-    title: "Automation",
+    icon: <Database className="h-10 w-10" />,
+    title: "Database Architecture",
     description:
-      "Save time by automating repetitive tasks and workflows.",
+      "Robust database design, optimization, and management for reliable data storage and retrieval.",
   },
   {
-    icon: <MessageSquare className="h-10 w-10" />,
-    title: "Smart Notifications",
+    icon: <BarChart3 className="h-10 w-10" />,
+    title: "Analytics & Business Intelligence",
     description:
-      "Stay informed with customizable alerts and notifications.",
+      "Data-driven insights and visualization tools that help you make informed business decisions.",
   },
+];
+
+const technologies = [
+  { name: "React", icon: <Code className="h-6 w-6" /> },
+  { name: "Node.js", icon: <Terminal className="h-6 w-6" /> },
+  { name: "Python", icon: <Terminal className="h-6 w-6" /> },
+  { name: "AWS", icon: <Cloud className="h-6 w-6" /> },
+  { name: "Docker", icon: <RefreshCw className="h-6 w-6" /> },
+  { name: "MongoDB", icon: <Database className="h-6 w-6" /> },
+  { name: "Angular", icon: <Code className="h-6 w-6" /> },
+  { name: "Vue.js", icon: <Code className="h-6 w-6" /> },
 ];
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-16 bg-gray-50 scroll-mt-16">
+    <section id="services" className="py-20 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Key Features</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover how our platform can transform your workflow and enhance your team's productivity.
+            We offer a comprehensive range of software development services to help your business thrive in the digital era.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
@@ -64,14 +78,42 @@ export function FeaturesSection() {
               custom={index * 0.1}
             >
               <div className="text-primary mb-4">
-                {feature.icon}
+                {service.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
               <p className="mt-2 text-gray-600">
-                {feature.description}
+                {service.description}
               </p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="bg-gray-50 rounded-xl p-8 mt-16">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold text-gray-900">Technologies We Work With</h3>
+            <p className="mt-2 text-gray-600">
+              Our team is proficient in a wide range of modern technologies and frameworks
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6">
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={index}
+                className="flex flex-col items-center justify-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={fadeIn}
+                custom={index * 0.05}
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
+                  <div className="text-primary">{tech.icon}</div>
+                </div>
+                <span className="text-sm font-medium text-gray-700">{tech.name}</span>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
