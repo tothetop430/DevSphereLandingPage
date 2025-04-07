@@ -80,14 +80,10 @@ export function Footer() {
                 <a href="#testimonials" className="text-gray-400 hover:text-primary transition-colors">Testimonials</a>
               </li>
               <li>
-                <Link href="#">
-                  <a className="text-gray-400 hover:text-primary transition-colors">Careers</a>
-                </Link>
+                <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Careers</span>
               </li>
               <li>
-                <Link href="#">
-                  <a className="text-gray-400 hover:text-primary transition-colors">Blog</a>
-                </Link>
+                <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Blog</span>
               </li>
               <li>
                 <a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a>
@@ -100,12 +96,8 @@ export function Footer() {
           <div className="flex flex-col md:flex-row md:justify-between md:items-center">
             <p>&copy; {new Date().getFullYear()} DevSphere.info. All rights reserved.</p>
             <div className="mt-4 md:mt-0 flex gap-6">
-              <Link href="#">
-                <a className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
-              </Link>
-              <Link href="#">
-                <a className="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
-              </Link>
+              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Privacy Policy</span>
+              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Terms of Service</span>
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-900">Email</h4>
-                    <p className="mt-1 text-sm text-gray-600">contact@devsphere.info</p>
+                    <p className="mt-1 text-sm text-gray-600">albayani@devsphere.info</p>
                   </div>
                 </div>
                 
@@ -48,7 +48,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-900">Phone</h4>
-                    <p className="mt-1 text-sm text-gray-600">+1 (555) 123-4567</p>
+                    <p className="mt-1 text-sm text-gray-600">(609) 961-1118</p>
                   </div>
                 </div>
                 
@@ -61,7 +61,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-900">Location</h4>
-                    <p className="mt-1 text-sm text-gray-600">123 Tech Street, Suite 100<br />San Francisco, CA 94107</p>
+                    <p className="mt-1 text-sm text-gray-600">Lafayette, Colorado</p>
                   </div>
                 </div>
               </div>
