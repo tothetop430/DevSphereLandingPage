@@ -8,10 +8,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
-              <span className="text-2xl font-bold text-white">DevSphere<span className="text-primary">.info</span></span>
+              <span className="text-2xl font-bold text-white">
+                DevSphere<span className="text-primary">.info</span>
+              </span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Creating innovative software solutions for businesses worldwide. We specialize in web development, mobile applications, cloud solutions, and more.
+              Creating innovative software solutions for businesses worldwide.
+              We specialize in web development, mobile applications, cloud
+              solutions, and more.
             </p>
             <div className="flex space-x-4">
               <a
@@ -51,19 +55,44 @@ export function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Web Development</a>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Web Development
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Mobile Applications</a>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Mobile Applications
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Cloud Solutions</a>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Cloud Solutions
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">UI/UX Design</a>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  UI/UX Design
+                </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-primary transition-colors">Web3 & Blockchain</a>
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Web3 & Blockchain
+                </a>
               </li>
             </ul>
           </div>
@@ -74,19 +103,41 @@ export function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-primary transition-colors">About Us</a>
+                <a
+                  href="#about"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="#testimonials" className="text-gray-400 hover:text-primary transition-colors">Testimonials</a>
+                <a
+                  href="#testimonials"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Testimonials
+                </a>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Careers</span>
+                <a
+                  href="/careers"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Careers
+                </a>
               </li>
               <li>
-                <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Blog</span>
+                <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+                  Blog
+                </span>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a>
+                <a
+                  href="#contact"
+                  className="text-gray-400 hover:text-primary transition-colors"
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -94,10 +145,17 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-gray-400">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-            <p>&copy; {new Date().getFullYear()} DevSphere.info. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} DevSphere.info. All rights
+              reserved.
+            </p>
             <div className="mt-4 md:mt-0 flex gap-6">
-              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Privacy Policy</span>
-              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">Terms of Service</span>
+              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+                Privacy Policy
+              </span>
+              <span className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+                Terms of Service
+              </span>
             </div>
           </div>
         </div>

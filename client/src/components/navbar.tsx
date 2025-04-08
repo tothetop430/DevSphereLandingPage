@@ -36,7 +36,10 @@ export function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <span className="text-primary font-bold text-xl cursor-pointer">DevSphere<span className="text-gray-700 font-normal">.info</span></span>
+              <span className="text-primary font-bold text-xl cursor-pointer">
+                DevSphere
+                <span className="text-gray-700 font-normal">.info</span>
+              </span>
             </Link>
           </div>
           <div className="hidden md:block">
@@ -69,6 +72,14 @@ export function Navbar() {
               >
                 Testimonials
               </Button>
+              <Link href="/careers">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-start text-gray-700 hover:text-primary hover:bg-gray-100"
+                >
+                  Careers
+                </Button>
+              </Link>
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="ml-4 text-white bg-primary hover:bg-primary/90"
@@ -85,7 +96,11 @@ export function Navbar() {
               aria-label="Toggle menu"
               className="text-gray-700 hover:text-primary hover:bg-gray-100"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
