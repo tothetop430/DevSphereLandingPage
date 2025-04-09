@@ -22,7 +22,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8 # You have 10.8.0 locally, so feel free to match it
+          version: 10.8.0 # or keep 8 if that's your project version
 
       - name: Install dependencies
         run: pnpm install
