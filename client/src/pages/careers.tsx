@@ -19,6 +19,7 @@ const jobPositions = [
       "Experience with DevOps practices and CI/CD pipelines",
     ],
     icon: <Code className="h-8 w-8" />,
+    link: "https://apply.workable.com/devsphere/j/109E38E6CF/",
   },
   {
     title: "Lead Engineer",
@@ -34,6 +35,7 @@ const jobPositions = [
       "Track record of delivering large-scale projects",
     ],
     icon: <Briefcase className="h-8 w-8" />,
+    link: "https://apply.workable.com/devsphere/j/211CEBD469/",
   },
   {
     title: "Frontend Engineer",
@@ -49,6 +51,7 @@ const jobPositions = [
       "Passion for creating accessible, performant interfaces",
     ],
     icon: <Globe className="h-8 w-8" />,
+    link: "https://apply.workable.com/devsphere/j/F73A59010B/",
   },
   {
     title: "Backend Engineer",
@@ -64,6 +67,7 @@ const jobPositions = [
       "Familiarity with cloud services and containerization",
     ],
     icon: <Server className="h-8 w-8" />,
+    link: "https://apply.workable.com/devsphere/j/37399DFC07/",
   },
 ];
 
@@ -139,10 +143,12 @@ export default function Careers() {
                   </ul>
                 </div>
                 <div className="mt-6">
-                  <Button className="bg-primary hover:bg-primary/90 text-white shadow-sm group">
-                    Apply Now
-                    <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </Button>
+                  <a href={job.link} target="_blank">
+                    <Button className="bg-primary hover:bg-primary/90 text-white shadow-sm group">
+                      Apply Now
+                      <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </Button>
+                  </a>
                 </div>
               </motion.div>
             ))}
