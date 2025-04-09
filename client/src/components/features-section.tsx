@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
-import { 
-  Globe, Smartphone, Cloud, PenTool, Database, BarChart3, 
-  ShieldCheck, Code, Laptop, Settings, Terminal, RefreshCw 
+import {
+  Globe,
+  Smartphone,
+  Cloud,
+  PenTool,
+  Database,
+  BarChart3,
+  ShieldCheck,
+  Code,
+  Terminal,
+  RefreshCw,
 } from "lucide-react";
 import { fadeIn } from "@/lib/animations";
 
@@ -62,9 +70,12 @@ export function FeaturesSection() {
     <section id="services" className="py-20 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            Our Services
+          </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            We offer a comprehensive range of software development services to help your business thrive in the digital era.
+            We offer a comprehensive range of software development services to
+            help your business thrive in the digital era.
           </p>
         </div>
 
@@ -79,25 +90,26 @@ export function FeaturesSection() {
               variants={fadeIn}
               custom={index * 0.1}
             >
-              <div className="text-primary mb-4">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
-              <p className="mt-2 text-gray-600">
-                {service.description}
-              </p>
+              <div className="text-primary mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-900">
+                {service.title}
+              </h3>
+              <p className="mt-2 text-gray-600">{service.description}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="bg-gray-50 rounded-xl p-8 mt-16">
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-gray-900">Technologies We Work With</h3>
+            <h3 className="text-2xl font-bold text-gray-900">
+              Technologies We Work With
+            </h3>
             <p className="mt-2 text-gray-600">
-              Our team is proficient in a wide range of modern technologies and frameworks
+              Our team is proficient in a wide range of modern technologies and
+              frameworks
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-6">
             {technologies.map((tech, index) => (
               <motion.div
@@ -112,7 +124,9 @@ export function FeaturesSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
                   <div className="text-primary">{tech.icon}</div>
                 </div>
-                <span className="text-sm font-medium text-gray-700">{tech.name}</span>
+                <span className="text-sm font-medium text-gray-700">
+                  {tech.name}
+                </span>
               </motion.div>
             ))}
           </div>

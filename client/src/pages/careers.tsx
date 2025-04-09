@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { fadeIn, slideUp } from "@/lib/animations";
-import {
-  ArrowUpRight,
-  Briefcase,
-  Code,
-  Database,
-  Globe,
-  Server,
-} from "lucide-react";
+import { fadeIn } from "@/lib/animations";
+import { ArrowUpRight, Briefcase, Code, Globe, Server } from "lucide-react";
 
 // Job position data
 const jobPositions = [

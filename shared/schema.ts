@@ -1,4 +1,4 @@
-import { pgTable, text, serial, integer, boolean } from "drizzle-orm/pg-core";
+import { pgTable, text, serial } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -24,7 +24,9 @@ export const waitlistEntries = pgTable("waitlist_entries", {
   createdAt: text("created_at").notNull().default(new Date().toISOString()),
 });
 
-export const insertWaitlistEntrySchema = createInsertSchema(waitlistEntries).pick({
+export const insertWaitlistEntrySchema = createInsertSchema(
+  waitlistEntries
+).pick({
   name: true,
   email: true,
 });
