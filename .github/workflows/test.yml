@@ -24,6 +24,11 @@ jobs:
         with:
           version: 10.8.0 # or keep 8 if that's your project version
 
+      - name: Clean install dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          pnpm install
+
       - name: Install dependencies
         run: pnpm install
 
