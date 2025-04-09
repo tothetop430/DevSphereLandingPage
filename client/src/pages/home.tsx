@@ -4,7 +4,7 @@ import { StatsSection } from "@/components/stats-section";
 import { FeaturesSection } from "@/components/features-section";
 import { AboutSection } from "@/components/about-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
-import MeetTeamSection from "@/components/meet-team-section";
+import  MeetTeamSection  from "@/components/meet-team-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
               Ready to discuss your project? Contact us today for a free consultation.
             </p>
           </div>
-
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
@@ -41,7 +41,7 @@ export default function Home() {
                     <p className="mt-1 text-sm text-gray-600">albayani@devsphere.info</p>
                   </div>
                 </div>
-
+                
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-primary">
@@ -53,7 +53,7 @@ export default function Home() {
                     <p className="mt-1 text-sm text-gray-600">(609) 961-1118</p>
                   </div>
                 </div>
-
+                
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-primary">
@@ -67,7 +67,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
+              
               <div className="mt-8">
                 <h3 className="text-xl font-semibold mb-6">Follow Us</h3>
                 <div className="flex space-x-4">
@@ -94,53 +94,53 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
+            
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-6">Send Us a Message</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      placeholder="Your name"
+                    <input 
+                      type="text" 
+                      id="name" 
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                      placeholder="Your name" 
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      placeholder="Your email"
+                    <input 
+                      type="email" 
+                      id="email" 
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                      placeholder="Your email" 
                     />
                   </div>
                 </div>
-
+                
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Subject"
+                  <input 
+                    type="text" 
+                    id="subject" 
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    placeholder="Subject" 
                   />
                 </div>
-
+                
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="Your message"
+                  <textarea 
+                    id="message" 
+                    rows={5} 
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    placeholder="Your message" 
                   ></textarea>
                 </div>
-
-                <button
-                  type="submit"
+                
+                <button 
+                  type="submit" 
                   className="w-full px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                 >
                   Send Message
