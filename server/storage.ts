@@ -1,8 +1,6 @@
-import { 
-  users, 
+import {
   type User, 
   type InsertUser,
-  waitlistEntries,
   type WaitlistEntry,
   type InsertWaitlistEntry 
 } from "@shared/schema";
